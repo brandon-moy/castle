@@ -12,6 +12,19 @@ body {
   margin: 0;
 }
 
+.scroll-element {
+  position: absolute;
+  height: 6000px;
+  width: 100px;
+  top: 0;
+  z-index: 0;
+}
+
+.castle-one,
+.castle-two {
+  height: 100vh;
+}
+
 .front {
   isolation: isolate;
   position: fixed;
