@@ -1,3 +1,7 @@
+:root {
+  --roof: linear-gradient(red, blue);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -9,4 +13,87 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  margin: 0;
+}
+
+.front {
+  isolation: isolate;
+  position: fixed;
+  height: 50vh;
+  width: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+
+.front-roof-container {
+  width: 100%;
+  height: 20vh;
+  position: relative;
+}
+
+.front-roof-left {
+  width: 140px;
+  height: 40px;
+  background:
+    repeating-linear-gradient(
+      145deg,
+      #6595c3,
+      #6595c3 3%,
+      transparent 3%,
+      transparent 18%
+    ),
+    repeating-linear-gradient(
+      65deg,
+      #6595c3,
+      #6595c3 3%,
+      #2a5378 3%,
+      #2a5378 18%
+    );
+  transform: rotate(-75deg) skew(15deg);
+  position: absolute;
+  bottom: 48px;
+  left: -31px;
+}
+
+.front-roof-right {
+  width: 140px;
+  height: 40px;
+  background:
+    repeating-linear-gradient(
+      -70deg,
+      transparent,
+      transparent 12%,
+      #6595c3 12%,
+      #6595c3 15%,
+      transparent 15%,
+      transparent 16%
+    ),
+    repeating-linear-gradient(
+      -170deg,
+      #6595c3,
+      #6595c3 6%,
+      #2a5378 6%,
+      #2a5378 36%
+    );
+  transform: rotateZ(75deg) rotateY(180deg) skew(15deg);
+  position: absolute;
+  bottom: 48px;
+  right: -31px;
+}
+
+.front-wall {
+  width: 100%;
+  height: 30vh;
+  background: #ddd9da;
+  border: 4px solid #a89fa1;
+}
+
+.inner-wall {
+  width: 90%;
+  margin: auto;
+  height: 30vh;
+  background: #ddd9da;
+  border-left: 4px solid #a89fa1;
+  border-right: 4px solid #a89fa1;
 }
