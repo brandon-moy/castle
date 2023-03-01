@@ -302,7 +302,7 @@ body {
 
 .r-one {
   top: -10px;
-  right: 14px;
+  right: 13px;
 }
 
 .l-two {
@@ -351,6 +351,84 @@ body {
 
 .r-six {
   top: 11px;
+}
+
+.left-wall {
+  width: 0;
+  height: 30px;
+  border-left: 5px solid #c9b762;
+  border-top: 5px solid transparent;
+  position: absolute;
+  bottom: 16px;
+  left: 2px;
+}
+
+.right-wall {
+  width: 0;
+  height: 30px;
+  border-right: 5px solid #c9b762;
+  border-top: 5px solid transparent;
+  position: absolute;
+  bottom: 16px;
+  right: 2px;
+}
+
+.right-tall {
+  width: 0;
+  height: 30px;
+  border-left: 3.5px solid #c9b762;
+  border-top: 4px solid transparent;
+  position: absolute;
+  bottom: 16px;
+}
+
+.left-tall {
+  width: 0;
+  height: 30px;
+  border-right: 3.5px solid #c9b762;
+  border-top: 4px solid transparent;
+  position: absolute;
+  bottom: 16px;
+}
+
+.mid-l-one {
+  left: 10.5px;
+}
+
+.mid-l-two {
+  left: 14px;
+}
+
+.mid-l-three {
+  left: 22px;
+}
+
+.mid-l-four {
+  left: 25px;
+}
+
+.mid-l {
+  left: 31px;
+}
+
+.mid-r {
+  right: 31px;
+}
+
+.mid-r-one {
+  right: 14px;
+}
+
+.mid-r-two {
+  right: 10.5px;
+}
+
+.mid-r-three {
+  right: 25px;
+}
+
+.mid-r-four {
+  right: 22px;
 }
 
 .circle-container {
