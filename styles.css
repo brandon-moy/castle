@@ -542,3 +542,18 @@ body {
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   padding-top: 30%;
 }
+
+.behind-front {
+  isolation: isolate;
+  position: fixed;
+  bottom: 0;
+  height: 70vh;
+  width: 150px;
+  background: #ddd9da;
+  left: 44.5%;
+  z-index: -1;
+}
+
+.behind-window-container {
+  height: 10vh;
+}
