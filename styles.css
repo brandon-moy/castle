@@ -171,11 +171,98 @@ body {
   background: red;
 }
 
+.front-gate-top {
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  bottom: 10vh;
+  width: 190px;
+  color: #a89fa1;
+  filter: url("#goo");
+}
+
+.front-gate-top::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 30%;
+}
+
+.front-gate-top-inner {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  bottom: 0;
+  width: 178px;
+  color: #5b4d50;
+  filter: url("#goo");
+}
+
+.front-gate-top-inner::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 30%;
+}
+
 .front-gate {
-  background: black;
+  background: #5b4d50;
+  border-left: 4px solid #a89fa1;
+  border-right: 4px solid #a89fa1;
   position: absolute;
   width: 100%;
-  height: 15vh;
+  height: 11vh;
   bottom: 0;
   left: 0;
+}
+
+.inner-gate {
+  background: #5b4d50;
+  border-left: 4px solid #a89fa1;
+  border-right: 4px solid #a89fa1;
+  position: absolute;
+  width: 90%;
+  height: 10vh;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.inner-gate-top {
+  display: inline-block;
+  position: absolute;
+  left: -12px;
+  bottom: 9vh;
+  width: 167px;
+  color: #a89fa1;
+  filter: url("#goo");
+}
+
+.inner-gate-top::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 30%;
+}
+
+.inner-gate-top-inner {
+  display: inline-block;
+  position: absolute;
+  left: 4px;
+  bottom: -1px;
+  width: 158px;
+  color: #5b4d50;
+  filter: url("#goo");
+}
+
+.inner-gate-top-inner::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 30%;
 }

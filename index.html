@@ -20,7 +20,13 @@
       </div>
       <div class="front-wall">
         <div class="window-thing"></div>
+        <div class="front-gate-top">
+          <div class="front-gate-top-inner"></div>
+        </div>
         <div class="front-gate">
+          <div class="inner-gate-top">
+            <div class="inner-gate-top-inner"></div>
+          </div>
           <div class="inner-gate"></div>
         </div>
         <div class="inner-wall">
@@ -32,6 +38,15 @@
   </div>
   <div class="castle-two"></div>
   <div class="scroll-element"></div>
+  <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="main.js"></script>
