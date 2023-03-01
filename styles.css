@@ -275,6 +275,84 @@ body {
   margin: 10px 0 0;
 }
 
+.bronze-diamond {
+  width: 10px;
+  height: 10px;
+  background: #b59630;
+  border-radius: 0 100%;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.gold-diamond {
+  width: 10px;
+  height: 10px;
+  background: #c9b762;
+  border-radius: 0 100%;
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 10;
+}
+
+.l-one {
+  top: -10px;
+  left: 14px;
+}
+
+.r-one {
+  top: -10px;
+  right: 14px;
+}
+
+.l-two {
+  top: 0;
+  left: 8px;
+}
+
+.r-two {
+  top: 0;
+  right: 8px;
+}
+
+.l-three {
+  top: 0;
+  left: 19px;
+}
+
+.r-three {
+  top: 0;
+  right: 19px;
+}
+
+.l-four {
+  top: 11px;
+}
+
+.r-four {
+  top: 11px;
+  right: 2.5px;
+}
+
+.l-five {
+  top: 11px;
+  left: 14px;
+}
+
+.r-five {
+  top: 11px;
+  right: 14px;
+}
+
+.l-six {
+  top: 11px;
+  left: 25px;
+}
+
+.r-six {
+  top: 11px;
+}
+
 .circle-container {
   width: 100%;
   height: 2vh;
