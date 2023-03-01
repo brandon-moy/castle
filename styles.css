@@ -168,14 +168,70 @@ body {
   border-right: 4px solid #a89fa1;
 }
 
-.window-thing {
-  height: 15vh;
-  width: 80%;
-  margin: 0;
+.front-window-container {
+  height: 10vh;
+  width: 50%;
   position: absolute;
+  bottom: 145px;
   left: 50%;
   transform: translateX(-50%);
-  background: red;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.front-left-top {
+  flex-basis: 50%;
+  display: inline-block;
+  color: blue;
+  position: relative;
+  filter: url("#goo");
+}
+
+.front-left-top::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 125%;
+}
+
+.front-right-top {
+  flex-basis: 50%;
+  display: inline-block;
+  color: green;
+  position: relative;
+  filter: url("#goo");
+}
+
+.front-right-top::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 125%;
+}
+
+.front-left-window {
+  background: blue;
+  flex-basis: 50%;
+  height: 70%;
+  border-left: 3px solid #a89fa1;
+  border-bottom: 4px solid #a89fa1;
+  position: absolute;
+  bottom: 0;
+
+  /* left: 10px; */
+}
+
+.front-right-window {
+  background: green;
+  flex-basis: 50%;
+  height: 70%;
+  border-right: 3px solid #a89fa1;
+  border-bottom: 4px solid #a89fa1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .front-gate-top {
