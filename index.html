@@ -5,10 +5,93 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Document</title>
+  <title>Castle</title>
 </head>
 <body>
-
+  <div class="castle-one">
+    <div class="front">
+      <div class="front-roof-container">
+        <div class="front-roof-left"></div>
+        <div class="front-roof-right"></div>
+        <div class="triangle-border"></div>
+        <div class="roof-triangle"></div>
+        <div class="triangle-window">
+          <div class="top-half"></div>
+          <div class="bottom-half"></div>
+        </div>
+      </div>
+      <div class="front-wall">
+        <div class="front-window-container">
+          <div class="front-left-top"></div>
+          <div class="front-right-top"></div>
+          <div class="front-left-window">
+            <div class="front-left-inner"></div>
+            <div class="bronze-diamond l-one"></div>
+            <div class="gold-diamond l-two"></div>
+            <div class="gold-diamond l-three"></div>
+            <div class="bronze-diamond l-four"></div>
+            <div class="bronze-diamond l-five"></div>
+            <div class="bronze-diamond l-six"></div>
+          </div>
+          <div class="front-right-window">
+            <div class="front-right-inner"></div>
+            <div class="front-left-inner"></div>
+            <div class="bronze-diamond r-one"></div>
+            <div class="gold-diamond r-two"></div>
+            <div class="gold-diamond r-three"></div>
+            <div class="bronze-diamond r-four"></div>
+            <div class="bronze-diamond r-five"></div>
+            <div class="bronze-diamond r-six"></div>
+          </div>
+          <div class="left-wall"></div>
+          <div class="left-tall mid-l-one"></div>
+          <div class="right-tall mid-l-two"></div>
+          <div class="left-tall mid-l-three"></div>
+          <div class="right-tall mid-l-four"></div>
+          <div class="left-tall mid-l"></div>
+          <div class="right-tall mid-r"></div>
+          <div class="left-tall mid-r-one"></div>
+          <div class="right-tall mid-r-two"></div>
+          <div class="left-tall mid-r-three"></div>
+          <div class="right-tall mid-r-four"></div>
+          <div class="right-wall"></div>
+          <div class="circle-container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div class="front-gate-top">
+          <div class="front-gate-top-inner"></div>
+        </div>
+        <div class="front-gate">
+          <div class="inner-gate-top">
+            <div class="inner-gate-top-inner"></div>
+          </div>
+          <div class="inner-gate"></div>
+        </div>
+        <div class="inner-wall">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="castle-two"></div>
+  <div class="scroll-element"></div>
+  <svg style="visibility: hidden; position: absolute;" width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+        <feColorMatrix in="blur" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+        <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+      </filter>
+    </defs>
+  </svg>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
   <script src="main.js"></script>
