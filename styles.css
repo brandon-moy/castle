@@ -28,7 +28,7 @@ body {
 .front {
   isolation: isolate;
   position: fixed;
-  height: 50vh;
+  height: 55vh;
   width: 150px;
   left: 50%;
   transform: translateX(-50%);
@@ -93,8 +93,8 @@ body {
 
 .triangle-border {
   position: absolute;
-  bottom: 0;
-  z-index: -5;
+  bottom: -5px;
+  z-index: -1;
   border-bottom: 18vh solid #a89fa1;
   border-right: 75px solid transparent;
   border-left: 75px solid transparent;
@@ -102,13 +102,13 @@ body {
 
 .roof-triangle {
   position: absolute;
-  bottom: 0;
+  bottom: -4px;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 16vh solid #ddd9da;
   border-right: 30px solid transparent;
   border-left: 30px solid transparent;
-  z-index: -3;
+  z-index: 3;
 }
 
 .front-wall {
@@ -143,6 +143,7 @@ body {
       #a89fa1
     );
   border-radius: 10rem 10rem 0 0;
+  z-index: 5;
 }
 
 .bottom-half {
@@ -157,6 +158,7 @@ body {
       #5b4d50 50%,
       #5b4d50
     );
+  z-index: 5;
 }
 
 .inner-wall {
@@ -170,7 +172,7 @@ body {
 
 .front-window-container {
   height: 10vh;
-  width: 50%;
+  width: 46%;
   position: absolute;
   bottom: 145px;
   left: 50%;
@@ -180,10 +182,13 @@ body {
 }
 
 .front-left-top {
-  flex-basis: 50%;
+  width: 48px;
   display: inline-block;
-  color: blue;
-  position: relative;
+  color: #a89fa1;
+  position: absolute;
+  top: -38px;
+  left: -6px;
+  z-index: -1;
   filter: url("#goo");
 }
 
@@ -195,11 +200,33 @@ body {
   padding-top: 125%;
 }
 
-.front-right-top {
-  flex-basis: 50%;
+.front-left-inner {
+  width: 43px;
   display: inline-block;
-  color: green;
-  position: relative;
+  color: #5b4d50;
+  position: absolute;
+  top: -33px;
+  left: -3px;
+  z-index: -1;
+  filter: url("#goo");
+}
+
+.front-left-inner::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 125%;
+}
+
+.front-right-top {
+  width: 48px;
+  display: inline-block;
+  color: #a89fa1;
+  position: absolute;
+  z-index: -1;
+  top: -38px;
+  right: -6px;
   filter: url("#goo");
 }
 
@@ -211,27 +238,41 @@ body {
   padding-top: 125%;
 }
 
+.front-right-inner {
+  width: 43px;
+  display: inline-block;
+  color: #5b4d50;
+  position: absolute;
+  top: -33px;
+  right: -3px;
+  z-index: -1;
+  filter: url("#goo");
+}
+
+.front-right-inner::before {
+  content: "";
+  display: block;
+  background: currentcolor;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  padding-top: 125%;
+}
+
 .front-left-window {
-  background: blue;
+  background: #5b4d50;
   flex-basis: 50%;
   height: 70%;
   border-left: 3px solid #a89fa1;
   border-bottom: 4px solid #a89fa1;
-  position: absolute;
-  bottom: 0;
-
-  /* left: 10px; */
+  margin: 10px 0 0;
 }
 
 .front-right-window {
-  background: green;
+  background: #5b4d50;
   flex-basis: 50%;
   height: 70%;
   border-right: 3px solid #a89fa1;
   border-bottom: 4px solid #a89fa1;
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  margin: 10px 0 0;
 }
 
 .circle-container {
