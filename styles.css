@@ -28,8 +28,8 @@ body {
 .front {
   isolation: isolate;
   position: fixed;
-  height: 55vh;
-  width: 150px;
+  height: 50vh;
+  width: 125px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
@@ -72,11 +72,11 @@ body {
     repeating-linear-gradient(
       -70deg,
       transparent,
-      transparent 12%,
-      #6595c3 12%,
-      #6595c3 15%,
-      transparent 15%,
-      transparent 16%
+      transparent 3%,
+      #6595c3 3%,
+      #6595c3 6%,
+      transparent 6%,
+      transparent 14%
     ),
     repeating-linear-gradient(
       -170deg,
@@ -93,11 +93,13 @@ body {
 
 .triangle-border {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  z-index: -1;
-  border-bottom: 18vh solid #a89fa1;
-  border-right: 75px solid transparent;
-  border-left: 75px solid transparent;
+  z-index: 2;
+  border-bottom: 17vh solid #a89fa1;
+  border-right: 32px solid transparent;
+  border-left: 32px solid transparent;
 }
 
 .roof-triangle {
@@ -172,11 +174,11 @@ body {
 
 .front-window-container {
   height: 10vh;
-  width: 46%;
+  width: 55%;
   position: absolute;
-  bottom: 145px;
+  bottom: 120px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleY(0.8);
   display: flex;
   flex-wrap: wrap;
 }
@@ -450,9 +452,9 @@ body {
 .front-gate-top {
   display: inline-block;
   position: absolute;
-  left: -20px;
+  left: -18px;
   bottom: 10vh;
-  width: 190px;
+  width: 160px;
   color: #a89fa1;
   filter: url("#goo");
 }
@@ -468,9 +470,9 @@ body {
 .front-gate-top-inner {
   display: inline-block;
   position: absolute;
-  left: 6px;
-  bottom: 0;
-  width: 178px;
+  left: 4px;
+  bottom: -2px;
+  width: 155px;
   color: #5b4d50;
   filter: url("#goo");
 }
@@ -512,7 +514,7 @@ body {
   position: absolute;
   left: -12px;
   bottom: 9vh;
-  width: 167px;
+  width: 142px;
   color: #a89fa1;
   filter: url("#goo");
 }
@@ -528,9 +530,9 @@ body {
 .inner-gate-top-inner {
   display: inline-block;
   position: absolute;
-  left: 4px;
-  bottom: -1px;
-  width: 158px;
+  left: 2px;
+  bottom: -3px;
+  width: 138px;
   color: #5b4d50;
   filter: url("#goo");
 }
