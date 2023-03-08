@@ -28,8 +28,8 @@ body {
 .front {
   isolation: isolate;
   position: fixed;
-  height: 55vh;
-  width: 150px;
+  height: 50vh;
+  width: 125px;
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
@@ -72,11 +72,11 @@ body {
     repeating-linear-gradient(
       -70deg,
       transparent,
-      transparent 12%,
-      #6595c3 12%,
-      #6595c3 15%,
-      transparent 15%,
-      transparent 16%
+      transparent 3%,
+      #6595c3 3%,
+      #6595c3 6%,
+      transparent 6%,
+      transparent 14%
     ),
     repeating-linear-gradient(
       -170deg,
@@ -93,11 +93,13 @@ body {
 
 .triangle-border {
   position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 0;
-  z-index: -1;
-  border-bottom: 18vh solid #a89fa1;
-  border-right: 75px solid transparent;
-  border-left: 75px solid transparent;
+  z-index: 2;
+  border-bottom: 17vh solid #a89fa1;
+  border-right: 32px solid transparent;
+  border-left: 32px solid transparent;
 }
 
 .roof-triangle {
@@ -172,11 +174,11 @@ body {
 
 .front-window-container {
   height: 10vh;
-  width: 46%;
+  width: 55%;
   position: absolute;
-  bottom: 145px;
+  bottom: 120px;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) scaleY(0.8);
   display: flex;
   flex-wrap: wrap;
 }
@@ -450,9 +452,9 @@ body {
 .front-gate-top {
   display: inline-block;
   position: absolute;
-  left: -20px;
+  left: -18px;
   bottom: 10vh;
-  width: 190px;
+  width: 160px;
   color: #a89fa1;
   filter: url("#goo");
 }
@@ -468,9 +470,9 @@ body {
 .front-gate-top-inner {
   display: inline-block;
   position: absolute;
-  left: 6px;
-  bottom: 0;
-  width: 178px;
+  left: 4px;
+  bottom: -2px;
+  width: 155px;
   color: #5b4d50;
   filter: url("#goo");
 }
@@ -512,7 +514,7 @@ body {
   position: absolute;
   left: -12px;
   bottom: 9vh;
-  width: 167px;
+  width: 142px;
   color: #a89fa1;
   filter: url("#goo");
 }
@@ -528,9 +530,9 @@ body {
 .inner-gate-top-inner {
   display: inline-block;
   position: absolute;
-  left: 4px;
-  bottom: -1px;
-  width: 158px;
+  left: 2px;
+  bottom: -3px;
+  width: 138px;
   color: #5b4d50;
   filter: url("#goo");
 }
@@ -541,4 +543,189 @@ body {
   background: currentcolor;
   clip-path: polygon(50% 0, 100% 100%, 0 100%);
   padding-top: 30%;
+}
+
+.behind-front {
+  isolation: isolate;
+  position: fixed;
+  bottom: 0;
+  height: 60vh;
+  width: 125px;
+  background: #eeeded;
+  left: 45%;
+  z-index: -1;
+}
+
+.behind-window-container {
+  height: 6vh;
+}
+
+.window-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3vh;
+}
+
+.window-set {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 20%;
+  height: 3.2vh;
+  margin: 2vh 5px;
+}
+
+.grey-win {
+  background: #a89fa1;
+  flex-basis: 50%;
+  border: 3px solid #eeeded;
+}
+
+.dark-win {
+  background: #5b4d50;
+  flex-basis: 50%;
+  border: 3px solid #eeeded;
+}
+
+.behind-upper-window-container {
+  background: #ddd9da;
+  width: 30%;
+  height: 12vh;
+  position: absolute;
+  top: -8.5vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.upper-grey-win {
+  background: #a89fa1;
+  flex-basis: 50%;
+  border: 3px solid #ddd9da;
+}
+
+.upper-dark-win {
+  background: #5b4d50;
+  flex-basis: 50%;
+  border: 3px solid #ddd9da;
+}
+
+.behind-upper-window {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.window-row-1 {
+  margin-top: 2vh;
+  height: 1.5vh;
+}
+
+.window-row-2 {
+  height: 1.5vh;
+}
+
+.window-row-3 {
+  margin-top: 1.5vh;
+  height: 1.5vh;
+}
+
+.window-row-4 {
+  height: 2.5vh;
+}
+
+.behind-front-peak {
+  position: absolute;
+  border-bottom: 50px solid #a89fa1;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.bfpo {
+  top: -15vh;
+  left: 35%;
+}
+
+.bfpt {
+  top: -15vh;
+  right: 35%;
+}
+
+.behind-front-top-tri {
+  position: absolute;
+  top: -19.25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 90px solid #ddd9da;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.behind-front-zig-roof {
+  position: absolute;
+  z-index: -3;
+  top: -18vh;
+  height: 18vh;
+  width: 125px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background:
+    linear-gradient(135deg, #2a5378 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, #2a5378 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, #2a5378 25%, transparent 25%),
+    linear-gradient(45deg, #2a5378 25%, transparent 25%);
+  background-size: 20px 20px;
+  background-color: #6595c3;
+}
+
+.behind-front-gold-top {
+  width: 60%;
+  height: 10px;
+  position: absolute;
+  top: -19.25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(
+      to right,
+      #b59630 0,
+      #b59630 14%,
+      #c9b762 14%,
+      #c9b762 28%,
+      #b59630 28%,
+      #b59630 42%,
+      #c9b762 42%,
+      #c9b762 56%,
+      #b59630 56%,
+      #b59630 70%,
+      #c9b762 70%,
+      #c9b762 84%,
+      #b59630 84%,
+      #b59630 0
+    );
+}
+
+.behind-front-gold-peak {
+  position: absolute;
+  top: -25vh;
+  border-bottom: 50px solid #b59630;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.bfgpo {
+  left: 20%;
+}
+
+.bfgpt {
+  right: 20%;
+}
+
+.behind-front-gold-peak-ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b59630;
+  position: absolute;
+  top: 15px;
+  right: -5px;
 }
