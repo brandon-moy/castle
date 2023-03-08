@@ -660,3 +660,19 @@ body {
   border-left: 12px solid transparent;
   border-right: 12px solid transparent;
 }
+
+.behind-front-zig-roof {
+  position: absolute;
+  z-index: -3;
+  top: -18vh;
+  height: 18vh;
+  width: 125px;
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+  background:
+    linear-gradient(135deg, #2a5378 25%, transparent 25%) -10px 0,
+    linear-gradient(225deg, #2a5378 25%, transparent 25%) -10px 0,
+    linear-gradient(315deg, #2a5378 25%, transparent 25%),
+    linear-gradient(45deg, #2a5378 25%, transparent 25%);
+  background-size: 20px 20px;
+  background-color: #6595c3;
+}
