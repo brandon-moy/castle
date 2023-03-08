@@ -633,3 +633,20 @@ body {
 .window-row-4 {
   height: 2.5vh;
 }
+
+.behind-front-peak {
+  position: absolute;
+  border-bottom: 50px solid #a89fa1;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.bfpo {
+  top: -15vh;
+  left: 35%;
+}
+
+.bfpt {
+  top: -15vh;
+  right: 35%;
+}
