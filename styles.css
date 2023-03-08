@@ -637,8 +637,8 @@ body {
 .behind-front-peak {
   position: absolute;
   border-bottom: 50px solid #a89fa1;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
 }
 
 .bfpo {
@@ -649,4 +649,14 @@ body {
 .bfpt {
   top: -15vh;
   right: 35%;
+}
+
+.behind-front-top-tri {
+  position: absolute;
+  top: -20vh;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom: 90px solid #ddd9da;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
 }
