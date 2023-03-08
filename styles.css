@@ -552,7 +552,7 @@ body {
   height: 60vh;
   width: 125px;
   background: #eeeded;
-  left: 44.5%;
+  left: 45%;
   z-index: -1;
 }
 
@@ -653,7 +653,7 @@ body {
 
 .behind-front-top-tri {
   position: absolute;
-  top: -20vh;
+  top: -19.25vh;
   left: 50%;
   transform: translateX(-50%);
   border-bottom: 90px solid #ddd9da;
@@ -675,4 +675,57 @@ body {
     linear-gradient(45deg, #2a5378 25%, transparent 25%);
   background-size: 20px 20px;
   background-color: #6595c3;
+}
+
+.behind-front-gold-top {
+  width: 60%;
+  height: 10px;
+  position: absolute;
+  top: -19.25vh;
+  left: 50%;
+  transform: translateX(-50%);
+  background:
+    linear-gradient(
+      to right,
+      #b59630 0,
+      #b59630 14%,
+      #c9b762 14%,
+      #c9b762 28%,
+      #b59630 28%,
+      #b59630 42%,
+      #c9b762 42%,
+      #c9b762 56%,
+      #b59630 56%,
+      #b59630 70%,
+      #c9b762 70%,
+      #c9b762 84%,
+      #b59630 84%,
+      #b59630 0
+    );
+}
+
+.behind-front-gold-peak {
+  position: absolute;
+  top: -25vh;
+  border-bottom: 50px solid #b59630;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+}
+
+.bfgpo {
+  left: 20%;
+}
+
+.bfgpt {
+  right: 20%;
+}
+
+.behind-front-gold-peak-ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #b59630;
+  position: absolute;
+  top: 15px;
+  right: -5px;
 }
