@@ -735,25 +735,34 @@ body {
   isolation: isolate;
   bottom: 0;
   left: 35%;
-  height: 31vh;
+  height: 35vh;
   width: 75px;
   background: #ddd9da;
 }
 
 .outwards-trap {
   height: 3vh;
-  width: 160%;
+  width: 120%;
   position: relative;
-  left: -22px;
-  clip-path: polygon(0 0, 100% 0, 80% 100%, 19% 100%);
+  left: -7px;
+  clip-path: polygon(0 0, 100% 0, 91% 100%, 8% 100%);
   background: #a89fa1;
 }
 
 .rounded-trap-top {
   height: 0.5vh;
-  width: 160%;
+  width: 120%;
   position: relative;
-  left: -22px;
+  left: -7px;
   background: #a89fa1;
   border-radius: 100% 100% 0 0;
+}
+
+.top-of-left-turret {
+  width: 120%;
+  height: 4vh;
+  position: relative;
+  left: -7px;
+  top: 2px;
+  background: #ddd9da;
 }
