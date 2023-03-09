@@ -729,3 +729,13 @@ body {
   top: 15px;
   right: -5px;
 }
+
+.left-turret {
+  position: fixed;
+  isolation: isolate;
+  bottom: 0;
+  left: 35%;
+  height: 25vh;
+  width: 75px;
+  background: #ddd9da;
+}
