@@ -735,7 +735,25 @@ body {
   isolation: isolate;
   bottom: 0;
   left: 35%;
-  height: 25vh;
+  height: 31vh;
   width: 75px;
   background: #ddd9da;
+}
+
+.outwards-trap {
+  height: 3vh;
+  width: 160%;
+  position: relative;
+  left: -22px;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 19% 100%);
+  background: #a89fa1;
+}
+
+.rounded-trap-top {
+  height: 0.5vh;
+  width: 160%;
+  position: relative;
+  left: -22px;
+  background: #a89fa1;
+  border-radius: 100% 100% 0 0;
 }
